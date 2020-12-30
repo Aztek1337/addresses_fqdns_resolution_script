@@ -2,6 +2,9 @@
 This script is to help resolve multiple IPs and FQDNs using powershell and place the output into a CSV.
 This script works on both IP Addresses and FQDNs.
 
+For IP addresses this will resolve host names
+For FQDNs this will resolve IP addresses
+
 ## How to run
 * Clone this and cd into the dir.
 * In the file addresses_fqdns.txt, place each address or FQDN into one line, one line per entry.
