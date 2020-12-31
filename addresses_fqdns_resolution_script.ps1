@@ -28,12 +28,11 @@ Get-content -path .\addresses_fqdns.txt | foreach-object {
     IF($ProcessError) {
         Write-Host "Resolution error with $_!" -ForegroundColor Red
         Add-Content -path .\output.csv -value "$_,RESOLUTION_ERROR"
-        $name = "IPERROR"
 
         # adds +1 for each error
         $error_count += 1
     }
-    IF($name -ne "IPERROR") {
+    ELSE {
         $name = $address.name
         $ipaddress = $address.ipaddress
         $hostname = $address.NameHost
