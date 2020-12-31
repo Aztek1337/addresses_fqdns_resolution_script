@@ -1,5 +1,5 @@
 # Address/FQDN Resolution Script
-This script is to help resolve multiple IPs and FQDNs using powershell and place the output into a CSV.
+This script is to help resolve multiple IPs and FQDNs using PowerShell and place the output into a CSV.
 This script works on both IP Addresses and FQDNs.
 
 * For IP addresses this will resolve host names
